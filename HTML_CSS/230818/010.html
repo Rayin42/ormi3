@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 상속</title>
+    <style>
+        div {
+            color:red;
+            border: 2px solid pink;
+        }
+        h1, h2, p {
+            border: 2px solid rosybrown;
+        }
+        /* 버튼같은건 따로 지정안해주면 스타일 상속 안받음 */
+        button {
+            /* 상속받겠다 -> inherit 상속지정돼있지만 얘는 안받겠다 -> initial*/
+            color: inherit;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <p>Hello</p>
+        <button type="button">Hello</button>
+    </div>
+  </body>
+</html>

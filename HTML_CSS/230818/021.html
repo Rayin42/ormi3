@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진 병합현상</title>
+    <style>
+        /* 요소끼리 사이에 margin이 겹쳐있을 경우, 높은 값으로 적용 */
+        /* 조절을 하고 싶으면 parent에 padding을 주는 등 여백조절을 할 수 있으며,
+        마진병합 현상 자체를 해결할 수 있는 방법도 존재 */
+        .a,
+        .b {
+            width: 100px;
+            height: 100px;
+        }
+        .a {
+            background-color: salmon;
+            margin: 50px;
+        }
+        .b {
+            background-color: slateblue;
+            margin: 20px;
+        }
+        .parent {
+            background-color: skyblue;
+        }
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="a">A</div>
+    <div class="b">B</div>
+    
+    <div class="parent">
+        <div class="child">A</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div {
+            /* width height 100 50 했을경우 실제 값 160 x 110 */
+            /* 160 : 100 + 20(padding) + 20 + 10(border) + 10 = 160
+                width + padding*2 + border*2 */
+            width: 100px;
+            height: 50px;
+            /* width height 사이즈에 실제 사이즈를 맞추고 싶으면 border-box, 기본 값은 content-box */
+            /* box-sizing: border-box; */
+            padding: 20px;
+            border: 10px solid black;
+            /* 
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            border-image 등의 형태로 그라데이션도 가능하긴 함
+             */
+            margin: 20px;
+        }
+        span {
+            padding: 20px;
+            /* 
+            padding-top : 40px;
+            padding-right : 30px;
+            padding-bottom : 20px;
+            padding-left : 10px;
+            -> padding : 40px 30px 20px 10px; 순서대로
+            -> padding : 40px 30px 20px로 할 경우 40 30 20 30으로 설정
+            -> padding : 40px 30px로 적으면 40 30 40 30으로 설정   상하/좌우 맞춰주는 듯
+            margin도 기본적으로 마찬가지
+             */
+            border: 10px solid black;
+            /* margin: auto를 쓰면 자동으로 가운데 정렬. 상단 중앙정렬 하고 싶으면 margin: 20px auto
+            수평정렬은 가능하지만 세로정렬 못함 */
+            margin: 0 20px;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>box</div>
+    <span>inline</span>
+    <button type="button">버튼</button>
+
+  </body>
+</html>

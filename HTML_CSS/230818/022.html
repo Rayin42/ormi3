@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow, border, background</title>
+    <style>
+        /* 텍스트 값이 설정한 범위를 넘어설 때 overflow 설정. 기본값 visible */
+        div {
+            /* background도 축약속성 가능. */
+            background-color: skyblue;
+            background-image: url(https://cdn.discordapp.com/attachments/1135368988138950760/1141289547343343696/1.jpg);
+            /* background-position: 100px 100px; center같은 것도 가틍*/
+            background-repeat: no-repeat;
+            /* background-size: 300px; */
+            /* background-size: cover; */
+            background-size: contain;
+            /* cover 화면에 맞춰 늘리는 느낌(비율 때문에 잘릴 수 있음) contain 화면에 맞게 채워넣고 여백 남기기 */
+            border: 3px solid royalblue;
+            width: 1000px;
+            height: 500px;
+            overflow: scroll;
+            /* overflow-y 등으로 축지정도 가능 */
+            border-radius: 50px 20px;
+            /* 마진, 패딩때처럼 시계방향, 상하좌우 */
+
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam quam voluptatibus vel fugit magnam tempore dolores ab culpa. Qui natus, nihil cumque iusto ipsam necessitatibus quidem fugiat fuga tempora.
+        Animi tempore, quos delectus eaque nihil sapiente deserunt fugiat ex laborum recusandae? Natus delectus adipisci ad, nostrum blanditiis ratione reprehenderit consectetur architecto sunt, fugit, eum voluptate obcaecati. Dolorum, eius recusandae.
+        Blanditiis, at incidunt. Dignissimos dolorum nisi, voluptatibus animi sunt hic eligendi ipsa omnis velit temporibus. Necessitatibus consectetur aut fuga laboriosam voluptatibus debitis ea rerum cum tenetur, eum, repudiandae, porro deleniti.
+        Maiores eius eos ea aliquam vero sequi, veritatis nobis debitis magni cupiditate quaerat nostrum inventore repellat quo! Possimus, sapiente iste autem minima eum et laudantium laboriosam vel porro nobis quidem.
+        Quis amet dolorum non ipsa cupiditate ab, laudantium consequuntur maiores a consectetur hic error? Nihil exercitationem sequi sunt maxime esse placeat, beatae eligendi dolores cum itaque sed iste id alias.
+        Assumenda, incidunt fugit libero quasi hic maiores facilis velit perferendis aliquam excepturi odit voluptate facere cupiditate amet, nesciunt ratione tempora consequatur, ipsa harum pariatur! Placeat molestiae voluptate inventore explicabo quod.
+        Sed quas fugit eius, fugiat autem unde eos cum perspiciatis deserunt molestiae dolorum impedit corporis similique quasi amet facere, vitae quidem, exercitationem recusandae numquam ratione. Vel totam aliquam odit consequatur!
+        Itaque facilis accusamus accusantium fuga sunt, inventore laboriosam asperiores, labore nemo laborum magnam, voluptate doloribus similique nostrum dignissimos totam quibusdam distinctio saepe placeat! Quos totam repellendus ullam nostrum voluptas laudantium.
+        Impedit fugit facilis sed, quibusdam laboriosam nesciunt aliquid. Nesciunt mollitia vero nam cum soluta recusandae voluptatum assumenda iure ut numquam doloremque, dolore iste error magni in perferendis quis repellendus dicta.
+        Voluptatibus officiis animi sit cupiditate error iure, ducimus voluptate ipsam, similique dolorem, vitae voluptatum aperiam est aut illo quas. Tempora esse quibusdam nihil natus accusantium ea id quos? Id, nulla?
+    </div>
+    안녕하세요
+
+  </body>
+</html>

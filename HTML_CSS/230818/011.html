@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /*명시 없이 전체 선택 시 body 내부요소 외에도 body, html까지 포함함*/
+        div * {
+            border: 3px solid red;
+            padding: 10px;
+        }
+        /* id선택 -> 한 페이지당 1개만 쓸 수 있기 때문에 재사용성 떨어지지만 header 등에 사용하면 좋다*/
+        #hello {
+            font-weight: bold;
+            background: pink;
+        }
+        /* 클래스 선택 여러개 지정 가능*/
+        .hello2 {
+            color: blue;
+        }
+        /* 특성 선택 */
+        [type="button"]{
+            width: 200px;
+            color: green;
+        }
+        [class="hello2"]{
+            border-color: royalblue;
+        }
+        /* 그룹 선택 */
+        h1, .hello2, #hello {
+            border-width: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <p>Hello</p>
+        <p id="hello">Hello</p>
+        <p class="hello2">Hello</p>
+        <p>Hello</p>
+        <p class="hello2">Hello</p>
+        <button type="button">Hello</button>
+    </div>
+
+  </body>
+</html>

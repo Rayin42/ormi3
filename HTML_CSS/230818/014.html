@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 가상 선택자</title>
+    <style>
+        /* 형제 그룹 중 첫번째 요소 */
+        .ol>li:first-child{
+            color:red;
+            border: 1px solid red;
+        }
+        /* 형제 그룹 중 마지막 요소 */
+        li:last-child{
+            color: green;
+        }
+        /* 형제 그룹 중 n번째 >>> 0번이 아니라 1번부터 시작함, odd even  홀짝도 지정 가능, 2n+1같은 함수도 가능*/
+        li:nth-child(2) {
+            color: blue;
+        }
+        /* 부정선택자 */
+        li:not(:first-child){
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <ol class="ol">
+        <li class="item">list
+            <ol start="6">
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+            </ol>
+        </li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+
+  </body>
+</html>

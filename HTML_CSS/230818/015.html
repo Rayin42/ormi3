@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자 우선순위</title>
+    <style>
+        /* id가 클래스보다 더 구체적! */
+        #hello {
+            color:violet;
+        }
+        /* 클래스가 더 구체적이고, p태그가 더 광범위하기 때문에 구체적으로 적혀있는 것을 따름 */
+        .hello {
+            color: green;
+        }
+        /* !important넣으면 무조건 따르지만 좋지 못한 습관 */
+        p {
+            color:red !important;
+            background-color: skyblue;;
+        }
+        /* ...많은 코드! */
+        /* 같은 태그에는 나중에 쓴 것으로 덮어씀 */
+        p {
+            color: blue;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!-- 인라인을 넣으면 우선시!-->
+    <p class="hello" id="hello" style="color:gold;">안녕하세요</p>
+
+  </body>
+</html>
