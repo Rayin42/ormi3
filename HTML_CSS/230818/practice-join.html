@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 html&CSS</title>
+    <style>
+        .content {
+            border: 1px solid #c6c6c6;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .text-box {
+            padding-bottom: 40px;
+        }
+        h1 {
+            margin: 0px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: gray;
+        }
+        .id-pw-label {
+            display:inline-block;
+            width: 20%;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .id-pw-input {
+            margin: 5px 0px;
+            padding: 7px 0px;
+            width: 75%;
+        }
+        .gender-wrap{
+            padding: 15px 0px 10px;
+        }
+        .tech-wrap {
+            padding: 15px 0px 40px;
+        }
+        .category-label {
+            display:inline-block;
+            width: 20%;
+        }
+        .category-select {
+            line-height: 2.1;
+        }
+        .tech-check-wrap {
+            display: inline;
+            position: absolute;
+            left: 85px;
+        }
+        button {
+            background-color: #4a68d9;
+            width: 100%;
+            height: 3vh;
+            color: white;
+            border: transparent;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <form action="" method="POST">
+            <div class="text-box">
+                <h1>회원가입</h1>
+                <p>원활한 서비스 이용을 위해 회원가입을 해주세요</p>
+            </div>
+            <div class="id-pw-wrap">
+                <div>
+                    <label for="user-id" class="id-pw-label">아이디</label>
+                    <input id="user-id" type="text" class="id-pw-input" />
+                </div>
+                <div>
+                    <label for="user-email" class="id-pw-label">이메일</label>
+                    <input id="user-email" type="email" class="id-pw-input"/>
+                </div>
+                <div>
+                    <label for="user-pw" class="id-pw-label">비밀번호</label>
+                    <input id="user-pw" type="password" class="id-pw-input" />
+                </div>
+                <div>
+                    <label for="user-nick" class="id-pw-label">닉네임</label>
+                    <input id="user-nick" type="text" class="id-pw-input" />
+                </div>
+            </div>
+
+            <div class="gender-wrap">
+                <span class="category-label">
+                    성별
+                </span>
+                <span class="category-select">
+                    <input id="gender1" name="gender" type="radio">
+                    <label for="gender1">남성</label>
+                    <input id="gender2" name="gender" type="radio">
+                    <label for="gender2">여성</label>
+                    <input id="gender3" name="gender" type="radio">
+                    <label for="gender3">선택 안함</label>
+                </span>
+            </div>
+            <div class="tech-wrap">
+                <span class="category-label">
+                    사용 기술
+                </span>
+                <span class="category-select">
+                    <div class="tech-check-wrap">
+                        <input id="tech1" name="HTML" type="checkbox">
+                        <label for="tech1">HTML</label>
+
+                        <input id="tech2" name="CSS" type="checkbox">
+                        <label for="tech2">CSS</label>
+
+                        <input id="tech3" name="JavaScript" type="checkbox">
+                        <label for="tech3">JavaScript</label>
+
+                        <input id="tech4" name="Python" type="checkbox">
+                        <label for="tech4">Python</label>
+
+                        <input id="tech5" name="Django" type="checkbox">
+                        <label for="tech5">Django</label>
+
+                        <input id="tech6" name="GitHub" type="checkbox">
+                        <label for="tech6">GitHub</label>
+
+                        <input id="tech7" name="PostgreSQL" type="checkbox">
+                        <label for="tech7">PostgreSQL</label>
+                    </div>
+                </span>
+            </div>
+
+
+            <button type="submit">회원가입</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
