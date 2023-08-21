@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            background: skyblue;
+            margin-bottom: 20px;
+        }
+
+        [class^="box"] {
+            width: 100px;
+            height: 100px;
+            background: rgb(141, 75, 246);
+            color: #fff;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        [class^="box"]:first-child {
+            background: royalblue;
+        }
+
+        [class^="box"]:last-child {
+            background: salmon;
+        }
+
+
+        .box-left {
+            float: left;
+        }
+
+        /* overflow hidden을 쓰면 container 자식요소가 전부 float일 때 container의 높이가 box만큼 되지 못하는 것을 해결 가능 직접 봐야할 듯*/
+        /* .container {
+            overflow: hidden;
+        } */
+        /* 가상요소: after, before 자리에 무언가 있다고 처리할 수 있음
+        content ''를 넣어줘야 생성하며, 글자도 넣을 수야 있지만 css스타일용으로 쓰기 위한 목적인듯? clear 해결방법이라고도 하고*/
+        .container::after {
+            content: '';
+        }
+
+        /* 실무에서 clear fix라고 만들어놓는다고 */
+        .clear-fix::after {
+            content:'';
+            display:block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        container
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+    </div>
+
+    <div class="container">
+        container
+        <div class="box-left">A</div>
+        <div class="box-left">B</div>
+        <div class="box-left">C</div>
+    </div>
+
+</body>
+
+</html>

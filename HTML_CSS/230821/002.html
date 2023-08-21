@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        /* 해당 요소가 나올 때 좌측, 혹은 우측에 무언가 남아있을 경우 다음줄로....이건 직접 보고 확인하는 것이 */
+        div {
+            clear: both;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: royalblue;
+        }
+
+        .float-left .box {
+            float: left;
+        }
+        .float-right .box {
+            float: right;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <div class="box">box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque ab doloribus cumque tempora blanditiis omnis fugit eos possimus maiores, dolorem, fugiat mollitia illum reprehenderit, eius accusantium sunt cum! Eos.</p>
+    </div>
+    <div class="float-left">
+        <div class="box">box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque ab doloribus cumque tempora blanditiis omnis fugit eos possimus maiores, dolorem, fugiat mollitia illum reprehenderit, eius accusantium sunt cum! Eos.</p>
+    </div>
+    <div class="float-right">
+        <div class="box">box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque ab doloribus cumque tempora blanditiis omnis fugit eos possimus maiores, dolorem, fugiat mollitia illum reprehenderit, eius accusantium sunt cum! Eos.</p>
+    </div>
+
+  </body>
+</html>

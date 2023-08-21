@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 실습</title>
+    <style>
+        .container {
+            width: 50%;
+        }
+        .container *{
+            border: 5px solid blue;
+            border-collapse: collapse;
+        }
+        .header {
+            background-color: red;
+            height : 100px;
+        }
+        .section-article {
+            background-color: aquamarine;
+            float:left;
+            width: 60%;
+            height: 300px;
+        }
+        .aside {
+            background-color: bisque;
+            height: 300px;
+        }
+        .footer {
+            background-color: rosybrown;
+            clear: left;
+            height: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="section-article">section > article</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        /* flex는 container에만 준다고. container 역할도 좀 알고 싶습니다 */
+        /* flex는 1차원적(x축 기준 row, y축 기준 column), grid는 2차원적 */
+        .item {
+            /* width: 100px;
+            height: 100px; */
+            background-color: skyblue;
+        }
+        .item:nth-child(odd) {
+            background-color: gold;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+
+        .item:first-child {
+            flex-shrink: 2;
+            align-self: end;
+        }
+        .item:nth-child(2) {
+            flex-shrink: 1;
+        }
+        
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀이</title>
+    <style>
+        /* 형제가 없는 요소. :only-child를 하면 body가 찝힘 */
+        /* body :only-child ->> body' ' 요렇게 공백은 자손선택자(잊지 말 것! -> 아아 그 body ol li{ 이렇게 썼었다}) */
+        li:only-child {
+            color: red;
+        }
+        /* body의 자손 중 형제가 없는 요소를 찾는 것 */
+        body :only-child {
+            background-color: skyblue;
+        }
+        /* ol이면서 item 클래스 */
+        ol.item {
+            border: 2px solid royalblue;
+        }
+        /* ol 자손 중 item 클래스 */
+        ol .item {
+            border: 2px solid gold;
+        }
+        /* item클래스면서 bold클래스 */
+        ol.item.bold {
+            content:'';
+        }
+        ol {
+            /* 기본값 outside -> list매겼을 때 숫자가 본문 왼쪽으로 툭 튀어나와 있는 것 */
+            list-style-position: inside;
+        }
+    </style>
+  </head>
+  <body>
+    <ol>
+        <li class="item bold">hello1</li>
+        <li>hello2</li>
+        <li>hello3</li>
+    </ol>
+    <ol class="item bold">
+        <li>hello4</li>
+    </ol>
+    <p>
+        hello
+        <strong>every one!</strong>
+        <strong>every one!</strong>
+    </p>
+    <p>
+        hello
+        <strong>every one!</strong>
+    </p>
+
+  </body>
+</html>

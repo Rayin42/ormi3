@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        /* flex는 container에만 준다고. container 역할도 좀 알고 싶습니다 */
+        /* flex는 1차원적(x축 기준 row, y축 기준 column), grid는 2차원적 */
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+        .item:nth-child(odd) {
+            background-color: gold;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: #ddd;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* 주 축을 기준으로 어떻게 정렬할 것인가 flex-start flex-end center space-between자주 쓰임*/
+            /* justify-content: center; */
+            /* 줄바꿈처리 flex-wrap -> 원래 flex는 item이 많아지면 유동적으로 그 item의 크기를 줄이는데 그 대신 줄바꿈으로 */
+            flex-wrap: wrap;
+            /*align-content -> wrap 적용이 되어있고 item이 2줄 이상일 때 정렬
+             align-items는 두번째 줄도 각 개별로 인식....between 값이 들어간다고 보면 되나
+             content는 덩어리로 인식 -> 첫번째줄 두번째줄 between값이 없음 */
+            align-items: center;
+            align-content: center;
+        }
+
+        .item {
+            /* 이렇게 되면 자식요소는 text */
+            display: flex;
+            /* 가로정렬 */
+            justify-content: center;
+            /* 세로정렬 */
+            align-items: center;
+            /* item의 초기 크기 설정 */
+            flex-basis: 80px;
+        }
+        .item:nth-child(2) {
+          color: red;
+          /* 남은 여백을 가져가는...비율같은 것. 다른 자식요소 grow가 3이라면 여백을 3:1 비율로 가져간다는 느낌 */
+          /* flex basis가 0이라면 여백 공간이 아니라 전체 공간을 분할 */
+          flex-grow: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+
+
+  </body>
+</html>
