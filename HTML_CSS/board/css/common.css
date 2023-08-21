@@ -1,112 +1,47 @@
-/* reset----------------------------- */
+/* font */
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap'); */
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* 초기화 reset ------------------------ */
 body,
 h1,
 h2,
 h3,
+h4,
 p,
 button,
 fieldset,
 legend,
-ul, ol, li {
-    margin: 0;
-    padding: 0;
+ul, ol, li{
+  margin: 0;
+  padding: 0;
 }
-ul, ol, li {
-    list-style: none;
-}
-
-button:enabled {
-    cursor: pointer;
+button:enabled{
+  cursor: pointer;
 }
 
-/* main------------------------------- */
-
-/* login page------------------------- */
-.login {
-    width: 400px;
-    margin: auto;
-
-}
-.main-title,
-.main-desc {
-    text-align: center;
-}
-.main-title {
-    font-size: 24px;
-}
-
-.main-desc {
-    color: #767676;
-    margin: 10px 0 32px;
-}
-/* 컨테이너1 */
-.main-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-/* 컨테이너2 */
-.main-form div {
-    display: flex;
-    align-items: center;
-}
-/* 컨테이너2 : 아이템 */
-.flex-input label {
-    width: 80px;
-    flex-shrink: 0;
-}
-.flex-input input {
-    height: 28px;
-    flex-grow: 1;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+body{
+  /* font-family: 'Nanum Myeongjo', serif; */
+  font-family:  'Pretendard-Regular', sans-serif;
 }
 
 
-.login-btn {
-    background-color: royalblue;
-    border: 0;
-    border-radius: 4px;
-    height: 36px;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-.login-btn:hover {
-    background-color: rgb(76, 120, 249);
-}
-.login-btn:disabled {
-    background-color: #ccc;
-}
-/* field */
-/* fieldset 유지 */
-.field {
-    border: 0;
-    /* display: flex가 fieldset에는 안먹힘 */
-    /* display: flex; */
-}
-.field legend {
-    float: left;
-    width: 80px;
-}
-.field ul {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-/* div, p태그로 변경 */
-.field-flex {
-    display: flex;
-}
-.field-flex p {
-    width: 80px;
-    flex-shrink: 0;
+
+/* main -----------------------------  */
+.main-title{
+  font-size:24px;
 }
 
-.field input:enabled + label {
-    cursor: pointer;
-}
-
-.field input:checked + label {
-    color:royalblue;
-}
