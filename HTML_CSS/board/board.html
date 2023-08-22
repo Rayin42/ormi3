@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="layout-header">
+        <h1><a href="./index.html">HTML/CSS 실습</a></h1>
+        <div>
+            <a href="./chat.html">채팅</a>
+            <a href="./login.html">로그인</a>
+            <a href="./join.html">회원가입</a>
+            <button type="button">로그아웃</button>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
+    <main class="board">
+        <header>
+            <h2>글쓰기</h2>
+            <p>내용을 입력해 주세요</p>
+        </header>
+
+        <section class="board-main">
+            <div class="main-category">
+                <label for="category">카테고리</label>
+                <select id="category" name="board-category">
+                    <option value="normal">일반</option>
+                    <option value="notice">공지사항</option>
+                </select>
+            </div>
+
+            <div class="main-title">
+                <label for="content-title">제목</label>
+                <input id="content-title" name="content-title" type="text">
+            </div>
+
+            <div class="main-content">
+                <label for="content">내용</label>
+                <input id="content" name="content" type="text">
+            </div>
+
+            <div class="main-upload">
+                <label for="button-upload">파일첨부</label>
+                <button>파일 선택</button>
+                <p>선택된 파일 없음</p>
+            </div>
+        </section>
+
+        <footer>
+            <button>목록</button>
+            <button>초기화</button>
+            <button>작성</button>
+        </footer>
+
+    </main>
+    <!-- //main -->
+    <!-- footer -->
+    <footer class="layout-footer">
+        Copyright 2023. 이름 All rights reserved.
+    </footer>
+    <!-- //footer -->
+
+</body>
+
+</html>

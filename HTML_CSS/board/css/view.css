@@ -1,7 +1,6 @@
 .view{
   width: 1000px;
   margin: auto;
-  border-bottom: 1px solid #ddd;
 }
 
 
@@ -24,6 +23,7 @@
 
 .view-contents{
   padding:20px;
+  border-bottom: 1px solid #ddd;
 }
 
 .view-contents ol,

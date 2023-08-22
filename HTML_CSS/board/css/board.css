@@ -1,0 +1,32 @@
+.board header p{
+    color: #bbb;
+    padding: 15px 0px;
+}
+
+.board-main {
+    border-top: 2px solid black;
+}
+
+label {
+    background-color: #ddd;
+}
+
+.main-category {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.main-category label {
+    text-align: center;
+    width: 100px;
+    height: 100%;
+}
+
+.main-title {
+    padding: 15px;
+}
+
+.main-content {
+    height: 500px;
+}
+
