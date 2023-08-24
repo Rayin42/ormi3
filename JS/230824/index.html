@@ -115,16 +115,37 @@
         
         // 초기값 없을 때 에러나는 경우 찾기 << 선택과제
         // <reduce를 이용해서 홀수만 누적하기>--------------------------------------
-        const arr = [1, 2, 3, 4, 5];
+        // const arr = [1, 2, 3, 4, 5];
+        // function reducer(x, y) {
+        //     if (y%2 === 1) {
+        //         console.log(x, y);
+        //         return x+y;
+        //     }
+        //     else return x;
+        // };
+        // const result = arr.reduce(reducer, 0);
+        // console.log(result);
+
+        const arr1 = [1, 2, 3, 4, 5];
+        const arr2 = [];
+
         function reducer(x, y) {
             if (y%2 === 1) {
-                console.log(x, y);
                 return x+y;
             }
             else return x;
         };
-        const result = arr.reduce(reducer, 0);
+        //배열 요소 O, 초기값 O : 결과 9
+        //const result = arr1.reduce(reducer, 0);
+        //배열 요소 O, 초기값 X : 결과 9
+        //const result = arr1.reduce(reducer);
+        // //배열 요소 X, 초기값 O : 결과 0
+        //const result = arr2.reduce(reducer, 0);
+        // //배열 요소 X, 초기값 X : 결과 에러
+        // const result = arr2.reduce(reducer);
+
         console.log(result);
+
 
 
 
