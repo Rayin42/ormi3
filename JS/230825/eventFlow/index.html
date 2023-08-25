@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="parent">
+        <ol>
+            <li><button class="btn-first" type="button">버튼1</button></li>
+            <li><button type="button">버튼2</button></li>
+            <li><button type="button">버튼3</button></li>
+        </ol>
+    </article>
+    <script>
+        const parent = document.querySelector('.parent');
+        window.oncontextmenu = function() {
+            return false;
+        }
+        parent.addEventListener('mousedown', function (event) {
+            if((event.button == 2)||(event.which == 3)) {
+                console.log("우클릭");
+            }    
+            console.log(event.button)
+            console.log(event.which)
+
+            console.log(event.target);  //이벤트 발생 진원지
+            console.log(event.currentTarget);   //이벤트 발생, 실행한 곳         이 경우는 마우스 클릭이 target(버튼)에서 이루어 졌지만 이벤트는 currentTarget(parent)에서 발생한 것
+        })
+
+    </script>
+  </body>
+</html>

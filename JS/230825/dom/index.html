@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        transition: 1s;
+    }
+
+    .red {
+        background-color: red;
+        width: 10px;
+        transition: 1s;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <!-- <div>
+    </div> -->
+
+    <!-- //투두리스트
+    <ul></ul>
+    <input type="text">
+    <button>브어어어어튼</button> -->
+
+    <!-- 스타일 조작용 -->
+    <p> 석봉아 이 어미는 떡을... </p>
+
+    <!-- 이미지에 data 속성 담고 가져오기 -->
+    <img
+    class="terran battle-cruiser"
+    src=""
+    data-ship-id="324"
+    data-weapons="laser"
+    data-health="400"
+    data-mana="250"
+    data-skill="yamato-cannon"
+    />
+
+</body>
+<script>
+    // // div를 클릭하면 클래스를 추가해서 빨간색으로 바꿔주는 이벤트 만들기
+    // const myDiv = document.querySelector("div")
+    // let toggle = true
+    // myDiv.addEventListener("click", ()=>{
+    //     if (toggle) {
+    //         myDiv.classList.add("red")
+    //     } else {
+    //         myDiv.classList.remove("red")
+    //     }
+    //     toggle = !toggle
+    // })
+
+
+
+    // const myBtn = document.querySelector("button");
+    // const myUl = document.querySelector("ul");
+
+    // myBtn.addEventListener('click', function () {
+    //     for (let i = 0; i < 5; i++) {
+    //         const myLi = document.createElement('li');
+    //         myUl.appendChild(myLi);
+    //     }
+    // })
+
+    // const myBtn = document.querySelector("button");
+    // const myUl = document.querySelector("ul");
+
+    // myBtn.addEventListener('click', function () {
+    //     for (let i = 0; i < 5; i++) {
+    //         const myLi = document.createElement('li');
+    //         const btnDel = document.createElement('button');
+    //         const btnTxt = document.createTextNode('버튼');
+
+    //         btnDel.append(btnTxt);
+    //         btnDel.addEventListener('click', () => {
+    //             myLi.remove();
+    //         });
+    //         myLi.append('삭제하기: ', btnDel);
+    //         myUl.appendChild(myLi);
+    //     }
+    // }); // 요소를 만들고 속성 배치 후 마지막에 하나씩 수납하는 느낌!
+
+    //<todo list 만들기>
+    // 내 화면 버튼 선택해서 가져오기
+    // 내가 할 일을 추가할 UL 가져오기
+    // 버튼을 클릭하면 인풋 요소에 있는 텍스트를 추가해야할 것!!
+    //--버튼을 클릭하면-- (이벤트)
+    // li요소 내부에 들어갈 버튼 생성
+    // 이 버튼은 li를 삭제하는 이벤트가 필요
+    // 버튼이 가지고 있는 텍스트는 필요
+    // 버튼을 li요소에 추가
+    // 인풋 요소를 가져옴
+    // 인풋 요소 안의 값을 가져옴
+    // 인풋 요소 안의 값을 li에 추가
+    // 마지막으로 완성된 todo li 를 il에 추가
+    // const myBtn = document.querySelector("button");
+    // const myUl = document.querySelector("ul");
+    // const input = document.querySelector("input");
+
+    // myBtn.addEventListener('click', function () {
+    //     const inputText = input.value;
+    //     if (!inputText.trim()) return;
+    //     const myLi = document.createElement('li');
+    //     const btnDel = document.createElement('button');
+    //     const btnTxt = document.createTextNode('완료');
+
+    //     btnDel.append(btnTxt);
+    //     btnDel.addEventListener('click', () => {
+    //         myLi.remove();
+    //     });
+    //     myLi.append('할일: ', inputText, btnDel);
+    //     myUl.appendChild(myLi);
+    //     }
+    // );
+
+    // //<스타일 조작하기>-------------------------------
+    // const target = document.querySelector("p");
+    // const targetColor = target.style.color;
+    // //이렇게 조작하면 inline으로 박힘
+    // target.style.color = "red";
+    // target.style.fontWeight = "bold";
+
+
+    // //이미지에 data-* (추가 정보?) 담기
+    // const img = document.querySelector('img')
+    // console.log(img.dataset);
+    // console.log(img.dataset.shipId);
+    
+</script>
+
+</html>
