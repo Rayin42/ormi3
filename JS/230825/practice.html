@@ -91,9 +91,8 @@
         //     if (users.age >= 27) newArr.push(users._id);
         // });
         // console.log(newArr);
-        // const newArr = [];
-        // newArr.push(users.filter(users=> users.age >= 27).map(users=> users._id));
-        // console.log(newArr);
+        const newArr = users.filter(users=> users.age >= 27).map(users=> users._id);
+        console.log(newArr);
 
 
         // // 3. id가 6271fd40e30856d15651c60c 인 사람의 name만 추출해주세요.
@@ -119,17 +118,17 @@
         // console.log(answer);
 
         // 5. (더 나아가기) user의 성비를 구해주세요.
-        let male = 0;
-        let female = 0;
-        users.forEach((users)=> {
-            if(users.gender === "male") {
-                male++;
-            } else {
-                female++;
-            }
-        });
-        const answer = (male * (100 / female));
-        console.log(answer);
+        // let male = 0;
+        // let female = 0;
+        // users.forEach((users)=> {
+        //     if(users.gender === "male") {
+        //         male++;
+        //     } else {
+        //         female++;
+        //     }
+        // });
+        // const answer = (male * (100 / female));
+        // console.log(answer);
 
     </script>
 </body>
